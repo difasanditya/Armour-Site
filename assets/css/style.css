@@ -1,0 +1,87 @@
+@import 'font-face.css';
+
+h1{
+    font-family: "League Gothic";
+    margin: 0;
+    color: #fff;
+    font-size: 5em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: "Roboto";
+    margin: 0;   
+}
+
+.margin{
+    margin: 16px;
+}
+
+.margin-narrow{
+    margin: 8px;
+}
+
+.margin-wide{
+    margin: 32px;
+}
+
+.padding{
+    padding: 16px;
+}
+
+.padding-narrow{
+    padding: 8px;
+}
+
+.padding-wide{
+    padding: 32px;
+}
+
+#menu{
+    text-align: right;
+    position: fixed;
+    top: 0;
+    left: -160px;
+    width: 160px;
+    height: 100%;
+    color: #fff;
+    background-color: #111;
+    font-family: "League Gothic";
+    text-transform: uppercase;
+    color: #fff;
+    transition: all 0.5s linear;
+    z-index: 5;
+}
+
+#menu label{
+    position: absolute;
+    top: 16px;
+    right: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+    border-radius: 0 8px 8px 0;
+    width: 40px;
+    height: 40px;
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#toogle-menu{
+    display: none;
+}
+
+#toogle-menu:checked ~ #menu{
+    left: 0;
+}
+
+#menu #menu-list{
+    list-style: none;
+    font-size: 2em;
+    margin-top: 18px;
+    padding: 0 16px 0 0;
+}

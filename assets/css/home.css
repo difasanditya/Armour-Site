@@ -1,0 +1,38 @@
+#home {
+    background: #111;
+    text-align: center;
+}
+
+
+#home #typed,
+#home .typed-cursor{
+    font-family: "League Gothic";
+    margin: 0;
+    color: #fff;
+    font-size: 5em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#home #logo {
+    height: 35%;
+    min-height: 100px;
+}
+
+#home #moving-text {
+    width: 100%;
+    text-align: center;
+}
+
+#home #menu-list{
+    list-style: none;
+}
+
+#home #next {
+    background: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 3em;
+}
