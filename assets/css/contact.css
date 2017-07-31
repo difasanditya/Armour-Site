@@ -33,10 +33,16 @@
 	opacity: 0;
 	font-size: 0.2em;
 }
-#contact .kotak:hover>article,#contact  .kotak:hover>p{
+#contact  .kotak:hover>p{
 	color: white;
 	opacity: 1;
-	font-size: 0.2em;
+	font-size: 0.18em;
+	transition: all 2s;
+}
+#contact .kotak:hover>article{
+	color: white;
+	opacity: 1;
+	font-size: 0.4em;
 	transition: all 2s;
 }
 #contact .kotak:hover>a>.fa{
