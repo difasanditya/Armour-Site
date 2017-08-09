@@ -1,3 +1,77 @@
+body, html
+{
+	height: 100%;
+	width: 100%;
+	margin:0;
+	padding:0;
+}
+
 #about {
+	height: 100%;
+	width: 100%;
     background: url("../img/background-about.jpg");
+    background-size: 100% 100%;
+	padding: 5%;
+	box-sizing: border-box;
+}
+/*
+#about .container::before {
+    content:"";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0, .7);
+}
+*/
+#about .container {
+	background: red;
+	width: 100%;
+}
+
+#about .title-container
+{
+	box-sizing: border-box;
+	padding: 10px;
+	width: 100%;
+	background-color: rgba(255,255,255,0.5);
+}
+
+#about .title
+{
+	font-size: 3em;
+	color:white;
+	font-family: sans-serif;
+}
+
+#about .content-container
+{
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+#about .inside-container
+{
+	background-color: blue;
+	display: flex;
+}
+
+#about .left-side
+{
+	background-color: pink;
+}
+
+#about .right-side
+{
+	
+}
+
+#about .image-inside
+{
+	width: 256px;
+	height: 256px;
+	padding: 20px;
+	background: yellow;
 }
