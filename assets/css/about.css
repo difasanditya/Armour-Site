@@ -1,3 +1,181 @@
+body, html
+{
+	height: 100%;
+	width: 100%;
+	margin:0;
+	padding:0;
+}
+
 #about {
-    
+	height: 100%;
+	width: 100%;
+    background: url("../img/background-about.jpg");
+    background-size: 100% 100%;
+	padding: 5%;
+	box-sizing: border-box;
+}
+/*
+#about .container::before {
+    content:"";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0, .7);
+}
+*/
+#about .container {
+	background: red;
+	width: 100%;
+}
+
+#about .title-container
+{
+	box-sizing: border-box;
+	padding: 10px;
+	width: 100%;
+	background-color: rgba(255,255,255,0.5);
+}
+
+#about .title
+{
+	font-size: 3em;
+	color:white;
+	font-family: sans-serif;
+}
+
+#about .inside-container
+{
+	background-color: blue;
+	box-sizing: border-box;
+	display: flex;
+	height: 100%;
+}
+
+#about .left-side
+{
+	background-color: pink;
+}
+
+#about .right-side
+{
+	padding: 10px;
+}
+
+#about .image-inside
+{
+	width: 256px;
+	height: 256px;
+	padding: 20px;
+	background: yellow;
+}
+
+#about .right-side .inner-title
+{
+	font-size: 2em;
+}
+
+#about .right-side .desc
+{
+	
+}
+
+/*
+*slider
+*/
+
+#about .slider-container
+{
+	position: relative;
+	height: 340px;
+	top: 0;
+	left: 0;
+	transition: all 1s;
+}
+
+#about .slider-part
+{
+	width: 100%;
+	padding: 30px;
+	box-sizing: border-box;
+	justify-content: center;
+}
+#about .slider-window
+{
+	overflow: hidden;
+	box-sizing: border-box;
+	border-radius: 10px;
+	height: 100% - 38px;
+}
+
+#about .slider-member
+{
+	float: left;
+	height: 100%;
+}
+
+#about .slider-nav
+{
+	position: relative;
+	width: 100%;
+	top: -38px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#about .buttons
+{
+	display: flex;
+	justify-content: center;
+}
+
+#about .buttons>div>label, .move-left, .move-right
+{
+	cursor: pointer;
+	margin: 3px;
+	color: #152D54;
+	opacity: 0.6;
+}
+
+#about .move-left, .move-right
+{
+	opacity: 0;
+}
+
+#about .slider-window:hover .move-left, .slider-window:hover .move-right
+{
+	opacity: 0.6;
+	color: white;
+}
+
+#about .slider-window:hover .buttons>div>label
+{
+	color: white;
+}
+
+#about .slider-window:hover .slider-nav
+{
+	background-color: rgba(0,0,0,0.7);
+}
+
+#about .sliderbutton
+{
+	display: none;
+}
+
+#about .buttons>div>label>:last-child
+{
+	display: none;
+}
+
+#about .sliderbutton:checked~label>:first-child
+{
+	display: none;
+}
+#about .sliderbutton:checked~label>:last-child
+{
+	display: inline;
 }
