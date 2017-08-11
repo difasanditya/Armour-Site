@@ -1,12 +1,11 @@
 $(".main").onepage_scroll({
     animationTime: 1000,
-    beforeMove: function (index) {},
+    beforeMove: function (index) {
+        toogle(index, 1000);
+    },
     afterMove: function (index) {},
     loop: false,
     pagination: false
-});
-$('#next').click(function () {
-    $('.main').moveDown();
 });
 
 var typed = new Typed('#typed', {
@@ -18,3 +17,13 @@ var typed = new Typed('#typed', {
     backDelay: 3000,
     autoInsertCss: true
 });
+
+function toogle(index, time){
+    if(index != 1){
+        $('#menu').fadeIn(time);
+    }
+    else{
+        document.getElementById("toogle-menu").checked = false;
+        $('#menu').fadeOut(time);
+    }
+}

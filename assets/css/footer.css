@@ -1,5 +1,4 @@
-#contact {
-    background: #111;
+#footer {
     margin: 0;
     padding-top: 7.5%;
     color: #fff;
@@ -10,11 +9,8 @@
     font-family: "League Gothic";
     width: 100%;
     height: 85%;
- /*tesss*/
-
 }
-#contact #border{
- /*tesss*/
+#footer #border{
 	width: 90%;
 	margin: 5%;
 	height: 50%;
@@ -24,40 +20,40 @@
 	border-radius: 20px;
 	border-color: gray;
 }
-#contact .kotak{
+#footer .kotak{
 	border-left: solid 10px;
 	border-color: gray;
 	background: #111;
 	width: 25%;
 	height: 100%;
 }
-#contact .kotak>article,#contact  .kotak>p{
+#footer .kotak>article,#footer  .kotak>p{
 	opacity: 0;
 	font-size: 0.2em;
 }
-#contact  .kotak:hover>p{
+#footer  .kotak:hover>p{
 	color: white;
 	opacity: 1;
 	font-size: 0.18em;
 	transition: all 2s;
 }
-#contact .kotak:hover>article{
+#footer .kotak:hover>article{
 	color: white;
 	opacity: 1;
 	font-size: 0.4em;
 	transition: all 2s;
 }
-#contact .kotak:hover>a>.fa{
+#footer .kotak:hover>a>.fa{
 	color: white;
 	position: relative;
 	font-size: 2em;
 	transition: all 1s;
 }
-#contact #place{
+#footer #place{
 	border-left: none;
 }
 
-#contact .kotak>a>.fa{
+#footer .kotak>a>.fa{
 	color: white;
 	padding-top: 25px;
 	font-size: 3em;

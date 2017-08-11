@@ -9,23 +9,30 @@ body, html
 #about {
 	height: 100%;
 	width: 100%;
-    background: url("../img/background-about.jpg");
+    /background: url("../img/background-about.jpg");
     background-size: 100% 100%;
-	padding: 5%;
 	box-sizing: border-box;
 }
-/*
-#about .container::before {
-    content:"";
-    display: block;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0,0,0, .7);
+
+#about h1
+{
+	display: inline;
+	/text-align: left;
+	/color:black;
 }
-*/
+
+#about p
+{
+	color: white;
+}
+
+#about .notation
+{
+	font-size: 2em;
+	font-style: serif;
+	color: white;
+}
+
 #about .container {
 	background: red;
 	width: 100%;
@@ -34,52 +41,26 @@ body, html
 #about .title-container
 {
 	box-sizing: border-box;
-	padding: 10px;
-	width: 100%;
-	background-color: rgba(255,255,255,0.5);
+	padding-left: 50px;
+	/background-color: rgba(255,255,255,0.5);
 }
-
-#about .title
-{
-	font-size: 3em;
-	color:white;
-	font-family: sans-serif;
-}
-
-#about .inside-container
-{
-	background-color: blue;
-	box-sizing: border-box;
-	display: flex;
-	height: 100%;
-}
-
 #about .left-side
 {
 	background-color: pink;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30%;
 }
 
 #about .right-side
 {
-	padding: 10px;
+	width: 70%;
 }
 
-#about .image-inside
+#about .desc
 {
-	width: 256px;
-	height: 256px;
-	padding: 20px;
-	background: yellow;
-}
-
-#about .right-side .inner-title
-{
-	font-size: 2em;
-}
-
-#about .right-side .desc
-{
-	
+	text-align: justify;
 }
 
 /*
@@ -89,7 +70,7 @@ body, html
 #about .slider-container
 {
 	position: relative;
-	height: 340px;
+	height: 380px;
 	top: 0;
 	left: 0;
 	transition: all 1s;
@@ -98,7 +79,7 @@ body, html
 #about .slider-part
 {
 	width: 100%;
-	padding: 30px;
+	padding: 50px;
 	box-sizing: border-box;
 	justify-content: center;
 }
@@ -107,12 +88,15 @@ body, html
 	overflow: hidden;
 	box-sizing: border-box;
 	border-radius: 10px;
-	height: 100% - 38px;
 }
 
 #about .slider-member
 {
 	float: left;
+	height: 100%;
+	background-color: blue;
+	box-sizing: border-box;
+	display: flex;
 	height: 100%;
 }
 
@@ -120,7 +104,6 @@ body, html
 {
 	position: relative;
 	width: 100%;
-	top: -38px;
 	display: flex;
 	justify-content: center;
 	align-items: center;

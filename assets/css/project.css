@@ -1,3 +1,18 @@
 #project {
-    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#project #project-container {
+    width: 100%;
+}
+
+#project #project-container .project-item{
+    transform: matrix(1, -0.03, 0, 1, 0, 0);
+    height: 25%;
+    width: 100%;
+    background-color: #fff;
+    margin: 16px 0;
 }
