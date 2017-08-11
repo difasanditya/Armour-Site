@@ -107,7 +107,6 @@ body, html
 	overflow: hidden;
 	box-sizing: border-box;
 	border-radius: 10px;
-	height: 100% - 38px;
 }
 
 #about .slider-member
@@ -120,7 +119,6 @@ body, html
 {
 	position: relative;
 	width: 100%;
-	top: -38px;
 	display: flex;
 	justify-content: center;
 	align-items: center;

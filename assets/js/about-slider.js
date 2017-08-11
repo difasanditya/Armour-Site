@@ -2,7 +2,8 @@
 len = $('.slider-container>div').length;
 step = 0;
 var slide = $('.slider-container');
-//$('.slider-window').css("height", $('.slider-window').height() - $('.slider-nav').height());
+$('.slider-window').css("height", $('.slider-window').height() - $('.slider-nav').height());
+$('.slider-nav').css("top", -$('.slider-nav').height())
 //width set
 //Untuk mengatur width dari slider-container danslider-member, mengikuti banyak gambar
 $('.slider-container').css("width", (len*100)+'%');
