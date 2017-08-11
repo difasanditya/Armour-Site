@@ -1,16 +1,19 @@
+var delay = 15000; //in milisecond
+
+
 //variables
 len = $('.slider-container>div').length;
 step = 0;
-var slide = $('.slider-container');
-$('.slider-window').css("height", $('.slider-window').height() - $('.slider-nav').height());
-$('.slider-nav').css("top", -$('.slider-nav').height())
 //width set
 //Untuk mengatur width dari slider-container danslider-member, mengikuti banyak gambar
 $('.slider-container').css("width", (len*100)+'%');
 $('.slider-member').css("width", (100/len)+'%');
 
+$('.slider-window').css("height", $('.slider-window').height() - $('.slider-nav').height());
+$('.slider-nav').css("top", -$('.slider-nav').height())
+
 //starting timeout u/ func otomatis
-loop = setTimeout(function(){otomatis();}, 5000);
+loop = setTimeout(function(){otomatis();}, delay);
 
 $('#radio-0').prop('checked', true);
 
