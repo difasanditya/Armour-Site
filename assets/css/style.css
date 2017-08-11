@@ -1,5 +1,9 @@
 @import 'font-face.css';
 
+body{
+    background: url("../img/black_twill.png");
+}
+
 h1{
     font-family: "League Gothic";
     margin: 0;
