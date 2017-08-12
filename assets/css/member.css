@@ -18,14 +18,15 @@
 
 #member .partial-container{
 	float:left;
-	width: 50%;
 	height: 100%;
 }
 
 #member #left-container{
+	width: 60%;
 	background-color: yellow;
 }
 #member #right-container{
+	width: 40%;
 	display: flex;
     justify-content:center;
     align-items:center;
@@ -91,15 +92,15 @@
 #member .mini-photo{
 	width: 70%;
 	height: 70%;
-	background:url("../img/armour.png");
-	background-color: pink;
+	//background:url("../img/armour.png");
+	//background-color: pink;
 	background-size: 100% 100%;
 	cursor: pointer;
 }
 
 #member #frame{
-	width: 90%;	
-	height: 90%;
+	width: 95%;	
+	height: 95%;
     background-color: black;
     position: relative;
     background:url("../img/armour.png");
