@@ -85,12 +85,25 @@ for(var i=0; i<frames.length; i++){
             $("#frame").css('backgroundImage','url("'+url+'")');
             $("#frame").fadeIn(1000);
             onOverStatus=false;
-            //setTimeout(function(){onOverStatus=false;},500);
         },1000)
-        //$("#frame").css('opacity','0');
     });
     element.mouseenter(function(){
         currentIndex=frames.index(this);
     });
 }
 ///////////////////end-of-photo-effect///////////
+/////////////////////////////////////////////////
+var instagramFormatUrl = "https://www.instagram.com/";
+var instagramUrl = [
+    "ad.jordi", "aldonovendilie", "fian_wi97", "andore_asu", "anthonywidjaja8", "benybudi", "ravianhartono", "christ_jon", "davinreinaldogozali",
+    "difasanditya", "fannyrence", "rio_gonteng", "hejmanik", "jefdale", "jovitabhekti397", "lianaester_","martinus490", "mettsardw","nadiahafista28",
+    "nicholasks_","petrapradyapramesthi", "rizkaherist", "salimhartono_","samueltheodorusj","stellameilisa", "wennieclarissaa","yoverina","yu_diii"];
+
+$("#instagram").click(function(){
+    var finalUrl = instagramFormatUrl+instagramUrl[currentIndex];
+    //window.location = finalUrl;
+    var win=window.open(finalUrl, '_blank');
+    win.focus();
+})
+
+////////////////////////////////////////////////
