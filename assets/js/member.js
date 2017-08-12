@@ -72,7 +72,7 @@ for(var i=0; i<frames.length; i++){
 ////////////////////end-of-photo-init////////////
 ////////////////////photo-effect/////////////////
 var onOverStatus=false;
-var currentIndex;
+var currentIndex=-1;
 for(var i=0; i<frames.length; i++){
     var element = frames.eq(i);
     element.mouseover(function(){
@@ -97,11 +97,13 @@ var instagramFormatUrl = "https://www.instagram.com/";
 var instagramUrl = [
     "ad.jordi", "aldonovendilie", "fian_wi97", "andore_asu", "anthonywidjaja8", "benybudi", "ravianhartono", "christ_jon", "davinreinaldogozali",
     "difasanditya", "fannyrence", "rio_gonteng", "hejmanik", "jefdale", "jovitabhekti397", "lianaester_","martinus490", "mettsardw","nadiahafista28",
-    "nicholasks_","petrapradyapramesthi", "rizkaherist", "salimhartono_","samueltheodorusj","stellameilisa", "wennieclarissaa","yoverina","yu_diii"];
+    "nicholasks_","petrapradyapramesthi", "rizkaherist", "salimhartono_","samueltheodorusj","stellameilisa", "wennieclarissaa","yoverina","yu_diii",
+    "pptibca4"];
 
 $("#instagram").click(function(){
-    var finalUrl = instagramFormatUrl+instagramUrl[currentIndex];
-    //window.location = finalUrl;
+    var finalUrl;
+    if(currentIndex==-1) finalUrl = instagramFormatUrl + instagramUrl[28];
+    else finalUrl = instagramFormatUrl+instagramUrl[currentIndex];
     var win=window.open(finalUrl, '_blank');
     win.focus();
 })
