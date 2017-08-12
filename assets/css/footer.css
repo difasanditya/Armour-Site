@@ -23,7 +23,7 @@
 #footer .kotak{
 	border-left: solid 10px;
 	border-color: gray;
-	background: #111;
+	background: rgba(0,0,0,0);
 	width: 25%;
 	height: 100%;
 }
