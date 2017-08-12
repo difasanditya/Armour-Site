@@ -1,4 +1,4 @@
-var delay = 15000; //in milisecond
+var delay = 30000; //in milisecond
 
 
 //variables
@@ -29,7 +29,7 @@ function geser()
 	$('.slider-container').css("left", '-'+(step*100)+'%');
 	$('#radio-'+step).prop('checked', true);
 	clearTimeout(loop);
-	loop = setTimeout(function(){otomatis();}, 5000);
+	loop = setTimeout(function(){otomatis();}, delay);
 }
 
 //button: move right
