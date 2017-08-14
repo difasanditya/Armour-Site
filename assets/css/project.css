@@ -25,6 +25,20 @@
     color: #111;
 }
 
+#project input[type=radio]{
+    display: none;
+}
+
+#project #none:checked ~ .modal{
+    display: none;
+}
+
+#project #modal-one:checked ~ .modal #video-2,
+#project #modal-two:checked ~ .modal #video-1
+{
+    display: none;
+}
+
 #project .modal{
     position: fixed;
     height: 100%;
@@ -43,4 +57,15 @@
     min-width: 320px;
     background-color: #fff;
     border-radius: 8px;
+    padding: 16px;
+    position: relative;
+}
+
+#project .modal .modal-container label{
+    color: #111;
+    font-size: 20px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
 }
