@@ -11,8 +11,36 @@
 
 #project #project-container .project-item{
     transform: matrix(1, -0.03, 0, 1, 0, 0);
-    height: 25%;
+    height: 100px;
     width: 100%;
     background-color: #fff;
     margin: 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#project #project-container .project-item h2{
+    color: #111;
+}
+
+#project .modal{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#project .modal .modal-container{
+    height: 60%;
+    width: 50%;
+    min-height: 320px;
+    min-width: 320px;
+    background-color: #fff;
+    border-radius: 8px;
 }

@@ -51,6 +51,14 @@ p{
     padding: 32px;
 }
 
+.unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
 #menu{
     text-align: right;
     position: fixed;
