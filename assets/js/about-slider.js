@@ -36,6 +36,7 @@ function geser()
 $('.move-right').click(function(){
 	if(step>=(len-1)) step = 0;
 	else step++;
+	clearTimeout(loop);
 	geser();
 });
 
@@ -43,11 +44,13 @@ $('.move-right').click(function(){
 $('.move-left').click(function(){
 	if(step<=0) step = len-1;
 	else step--;
+	clearTimeout(loop);
 	geser();
 });
 
 //radio button control
 $('.sliderbutton').click(function(){
 	step = this.value;
+	clearTimeout(loop);
 	geser();
 });
